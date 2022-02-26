@@ -1,0 +1,352 @@
+        
+		/*
+			SELECTED FONTS:
+
+			- Pushster;
+			- Nunito (Extra-Light, Italic);
+			- Bebas Neue;
+			- Oooh Baby;
+			- Vujahday Script;
+
+		*/
+
+		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;1,200&family=Oooh+Baby&family=Pushster&family=Vujahday+Script&display=swap');
+        
+        
+		/*
+			PRICIPAIS CORES:
+
+			- #1F2633 (Azul);
+			- #ED3128 (Vermelho);
+			- #fff (Branco);
+		
+		*/
+		
+		*{
+			margin: 0;
+			padding: 0%;
+		}
+
+		body{
+			background-color: black;
+			display: flex;
+			justify-content: center;
+		}
+
+		.gradient{
+			width: 100vw;
+			height: 100vh;
+            background: linear-gradient(320deg, #415780, #1F2633);
+            background-size: 200% 200%;
+            animation: colors 12s ease infinite;
+		}
+
+		@keyframes colors {
+			0%{
+				background-position: 0% 50%;
+			}
+
+			50%{
+				background-position: 100% 50%;
+			}
+
+			100%{
+				background-position: 50% 0%;
+			}
+		}
+
+		#top{
+			width: 400px;
+			height: 400px;
+			border-radius: 20px;
+			background-color: #fff;	
+			display: flex;	
+			justify-content: center;
+			position: absolute;
+			top: 17%;
+			animation: topPage 4s ease;
+			text-align: center;
+			box-shadow: 0px 5px 15px #222;
+		}
+
+		@keyframes topPage{
+			from{
+				top: -200px;
+			}
+
+			to{
+				top: 17%;
+			}
+		}
+
+
+		.txtBtn{
+			color: #fff;
+			font-family: 'Oooh Baby';
+			font-size: 15pt;
+			width: 300px;
+			height: 43px;
+			border-radius: 20px;
+			border-bottom: 3px solid #ED3128;
+			background: linear-gradient(to right, #F07E78, #ED3128);
+			position: absolute;
+			top: 30px;
+		}
+
+		#textPar, #textChange{
+			font-family: 'Bebas Neue';
+			color: #1F2633;
+			font-size: 45pt;
+			position: absolute;
+			top: 43%;
+			text-shadow: 1px 2px 5px #333;
+			animation: timer 2s ease;
+		}
+		
+		@keyframes timer {
+			from{
+				font-size: 0px;
+			}
+
+			to{
+				font-size: 45pt;
+			}
+		}
+
+
+
+        #calendar{
+            background-image: url(../Image/calendar.png);
+            width: 48px;
+            height: 50px;
+            border: none;
+            background-color: #ED3128;
+            border-radius: 10px;
+            position: absolute;
+            top: 65%;
+			display: flex;
+			justify-content: center;
+        }
+
+		img{
+			position: absolute;
+			top: 35%;
+			animation: images 8s ease ;
+		}
+
+		@keyframes images {
+			from{
+				top: -200px;
+			}
+
+			to{
+				top: 35%;
+			}
+		}
+
+		/*.wave{
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-repeat: repeat;
+			height: 10px;
+			background-size: 20px 20px;
+			background-image:
+			radial-gradient(circle at 10px 15px, transparent 12px, maroon 13px);
+		}*/
+
+
+
+
+		/* SCREEN MAX HEIGHT 1140PX */
+		@media screen and (max-height: 1140px){
+			#textPar, #textChange{
+				font-family: 'Bebas Neue';
+				color: #1F2633;
+				font-size: 45pt;
+				position: absolute;
+				top: 30%;
+				text-shadow: 1px 2px 5px #333;
+				animation: timer 2s ease;
+			}
+
+			img{
+				position: absolute;
+				top: 30%;
+				animation: images 8s ease ;
+			}
+	
+			@keyframes images {
+				from{
+					top: -200px;
+				}
+	
+				to{
+					top: 30%;
+				}
+			}
+		}
+
+
+		/* SCREEN MAX HEIGHT 800PX */
+
+		@media screen and (max-height: 950px){
+
+			/* COUNT DAYS */
+
+			#textPar, #textChange{
+				font-family: 'Bebas Neue';
+				color: #1F2633;
+				font-size: 45pt;
+				position: absolute;
+				top: 34%;
+				text-shadow: 1px 2px 5px #333;
+				animation: timer 2s ease;
+			}
+		}
+
+
+		/* SCREEN MAX HEIGTH 768PX */
+
+		@media screen and (max-height: 768px){
+
+			/* COUNT DAYS */
+
+			#textPar, #textChange{
+				font-family: 'Bebas Neue';
+				color: #1F2633;
+				font-size: 45pt;
+				position: absolute;
+				top: 35%;
+				text-shadow: 1px 2px 5px #333;
+				animation: timer 2s ease;
+			}
+		}
+
+
+
+		/* SCREEN MAX HEIGHT 667PX */
+
+		@media screen and (max-height: 600px){
+
+			/* COUNT DAYS */
+
+			#textPar, #textChange{
+				font-family: 'Bebas Neue';
+				color: #1F2633;
+				font-size: 45pt;
+				position: absolute;
+				top: 40%;
+				text-shadow: 1px 2px 5px #333;
+				animation: timer 2s ease;
+			}
+
+			
+			img{
+				position: absolute;
+				top: 40%;
+				animation: images 8s ease ;
+			}
+	
+			@keyframes images {
+				from{
+					top: -200px;
+				}
+	
+				to{
+					top: 40%;
+				}
+			}
+		}
+
+
+
+		/* SCREEN MAX WIDTH 520PX */
+		@media screen and (max-width: 520px){
+			/* COUNT DAYS */
+
+			#textPar, #textChange{
+				font-family: 'Bebas Neue';
+				color: #1F2633;
+				font-size: 45pt;
+				position: absolute;
+				top: 30%;
+				text-shadow: 1px 2px 5px #333;
+				animation: timer 2s ease;
+			}
+
+			
+			img{
+				position: absolute;
+				top: 40%;
+				animation: images 8s ease ;
+			}
+	
+			@keyframes images {
+				from{
+					top: -200px;
+				}
+	
+				to{
+					top: 40%;
+				}
+			}
+		}
+
+		/* SCREEN MAX WIDTH 400PX */
+		@media screen and (max-width: 400px) and (max-height: 600px){
+			#top{
+				width: 400px;
+				height: 400px;
+				border-radius: 20px;
+				background-color: #fff;	
+				display: flex;	
+				justify-content: center;
+				position: absolute;
+				top: 30%;
+				animation: topPage 4s ease;
+				text-align: center;
+				box-shadow: 0px 5px 15px #222;
+			}
+	
+			@keyframes topPage{
+				from{
+					top: -200px;
+				}
+	
+				to{
+					top: 40%;
+				}
+			}
+
+
+			#textPar, #textChange{
+				font-family: 'Bebas Neue';
+				color: #1F2633;
+				font-size: 45pt;
+				position: absolute;
+				top: 10%;
+				text-shadow: 1px 2px 5px #333;
+				animation: timer 2s ease;
+			}
+
+			
+			img{
+				position: absolute;
+				top: 40%;
+				animation: images 8s ease ;
+			}
+	
+			@keyframes images {
+				from{
+					top: -200px;
+				}
+	
+				to{
+					top: 40%;
+				}
+			}
+		}
+		
